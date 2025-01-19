@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="./main.css" />
+
+    <!-- MENU BAR -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+    />
+
+    <!-- font autowide -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT ORBITRON -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Micro+5&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header></header>
+    <button
+      id="open-sidebar-button"
+      onclick="openSidebar()"
+      aria-label="open sidebar"
+      aria-expanded="false"
+      aria-controls="navbar"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="40px"
+        viewBox="0 -960 960 960"
+        width="40px"
+        fill="#c9c9c9"
+      >
+        <path
+          d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"
+        />
+      </svg>
+    </button>
+
+    <nav id="navbar">
+      <ul>
+        <li class="nav">
+          <button
+            id="close-sidebar-button"
+            onclick="closeSidebar()"
+            aria-label="close sidebar"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="#c9c9c9"
+            >
+              <path
+                d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li class="home-li">
+          <a class="active-link" aria-current="page" href="./blog.html"
+            ><span>NextGen</span> Nexus</a
+          >
+        </li>
+        <li><a href="./blog.html">TECH</a></li>
+        <li><a href="./blog.html">SCIENCE</a></li>
+        <li><a href="./blog.html">AI</a></li>
+        <li>
+          <button class="button">
+            <a class="accent-link" href="./codeedit.html">POST BLOG</a>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+    <h1 id="tag">NextGen<span> Nexus</span></h1>
+
+    <main>
+      <h1>MOST POPULAR</h1>
+      <div class="con-banner swiper">
+        <div class="banner-wrapper">
+          <ul class="banner-list swiper-wrapper">
+            <li class="banner-item swiper-slide">
+              <a href="" class="banner-link">
+                <img src="./photos/markkk.webp" alt="" class="banner-image" />
+                <p class="badge">Tech</p>
+                <h2 class="banner-title">
+                  Zuckerberg trash talks Apple in interview with Joe Rogan
+                </h2>
+
+                <div class="banner-name">
+                  <i class="fa fa-user"></i> Abdul Khan &nbsp;
+                  <i class="fa fa-calendar"></i> 12 jan,2025
+                </div>
+
+                <span class="banner-button"> Read </span>
+              </a>
+            </li>
+
+            <li class="banner-item swiper-slide">
+              <a href="" class="banner-link">
+                <img src="./photos/game.webp" alt="" class="banner-image" />
+                <p class="badge">AI</p>
+                <h2 class="banner-title">
+                  Google is testing Gemini AI agents that help you in games
+                </h2>
+
+                <div class="banner-name">
+                  <i class="fa fa-user"></i> Sarang Sawant &nbsp;
+                  <i class="fa fa-calendar"></i> 10 jan,2025
+                </div>
+
+                <span class="banner-button"> Read </span>
+              </a>
+            </li>
+
+            <li class="banner-item swiper-slide">
+              <a href="" class="banner-link">
+                <img src="./photos/car.webp" alt="" class="banner-image" />
+                <p class="badge">Science</p>
+                <h2 class="banner-title">
+                  Arkansas has enough lithium for the world's Electrical Vehicles
+                </h2>
+
+                <div class="banner-name">
+                  <i class="fa fa-user"></i> Sarang Sawant &nbsp;
+                  <i class="fa fa-calendar"></i> 12 jan,2025
+                </div>
+
+                <span class="banner-button"> Read </span>
+              </a>
+            </li>
+
+            <li class="banner-item swiper-slide">
+              <a href="" class="banner-link">
+                <img src="./photos/elon.webp" alt="" class="banner-image" />
+                <p class="badge">Tech</p>
+                <h2 class="banner-title">
+                  How Elon Musk's xAI is quietly taking over X
+                </h2>
+
+                <div class="banner-name">
+                  <i class="fa fa-user"></i> Sarang Sawant &nbsp;
+                  <i class="fa fa-calendar"></i> 12 jan,2025
+                </div>
+
+                <span class="banner-button"> Read </span>
+              </a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div class="sto">
+        <h1>RECENT NEWS</h1>
+   
+        
+         <div class="fullstore">
+              <div class="leftstore">
+                <div class="card-container" id="card-container"></div>
+              </div>
+
+            <div class="rightstore">
+              <div class="container">
+                <h2>JUST FOR YOU</h2>
+                <div class="list" id="list"></div>
+                <div class="background-text">FOR YOU</div>
+             </div>
+          </div>
+        
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <!-- About Section -->
+        <div class="footer-section about">
+          <h2>NEXTGEN NEXUS</h2>
+          <p>
+            NEXTGEN NEXUS delivers the latest news, trends, and insights from the
+            world of technology, science, and AI. Stay ahead with us!
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <p><i class="fa fa-envelope"></i> info@nexus.com</p>
+          <p><i class="fa fa-phone"></i> +91 932 878 4563</p>
+          <p>
+            <i class="fa fa-map-marker"></i> A43 Dombivali, Mumbai
+          </p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 NextGen Nexus | Designed with Madmax Coder by Tech Enthusiasts</p>
+      </div>
+    </footer>
+
+    <!-- linking swiperis script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
